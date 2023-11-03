@@ -1,0 +1,16 @@
+{% extends 'base.jinja2' %}
+
+{% block content %}
+<form action="{{ url_for('sent') }}" method="POST">
+    <div>
+        <input type="text" name="username" placeholder="Enter username"/>
+    </div>
+    <div>
+        <input type="text" name="password" placeholder="Enter password"/>
+    </div>
+    <p>{{ prompt }}</p>
+    <div> 
+        <input type="submit"/>
+    </div>
+</form>
+{% endblock %}
